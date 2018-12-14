@@ -97,6 +97,16 @@
 
                 </android.support.design.widget.TextInputLayout>
 
+                <CheckBox
+                    android:id="@+id/auth_ckb_remember_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/remember_password"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/auth_til_password" />
+
                 <Button
                     android:id="@+id/auth_btn_login"
                     style="@style/button_dark"
@@ -108,7 +118,7 @@
                     android:theme="@style/button_primary_raised"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/auth_til_password" />
+                    app:layout_constraintTop_toBottomOf="@id/auth_ckb_remember_password" />
 
                 <Button
                     android:id="@+id/auth_btn_forgot_password"
